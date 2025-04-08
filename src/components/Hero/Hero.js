@@ -7,7 +7,7 @@ function Hero() {
     <HeroWrapper>
       <HeroImg>
         <Backdrop></Backdrop>
-        <MainImg src="/img/lady_1.png" alt="woman smiling" />
+        <MainImg src="./img/lady_1.png" alt="woman smiling" />
         <PostWrapper>
           <Post>
             I’ve become more conscoius of how i spend my monet and also about
@@ -20,12 +20,12 @@ function Hero() {
           </PostFooter>
         </PostWrapper>
         <ImgWrapper>
-          <Img src="/img/lady_small.png" alt="a woman smiling" />
+          <Img src="./img/lady_small.png" alt="a woman smiling" />
           <Img
-            src="/img/black_woman.png"
+            src="./img/black_woman.png"
             alt="an african woman in white smiling"
           />
-          <Img src="/img/male.png" alt="a young african man smiling" />
+          <Img src="./img/male.png" alt="a young african man smiling" />
         </ImgWrapper>
       </HeroImg>
 
