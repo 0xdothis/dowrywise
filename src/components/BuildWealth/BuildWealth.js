@@ -6,7 +6,7 @@ import UnstyledButton from "../UnstyledButton";
 function BuildWealth() {
   return (
     <Wrapper>
-      <AppImg src="/img/mobile_app.png" />
+      <AppImg src="./img/mobile_app.png" />
       <BuildWrapper>
         <Heading>Start building wealth in 5 minutes</Heading>
         {buildContent.map((content) => (
