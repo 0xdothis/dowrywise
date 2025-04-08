@@ -2,7 +2,7 @@ export const data = [
   {
     tag: "savings",
     title: "Create multiple saving plans",
-    imgUrl: "/img/jar.png",
+    imgUrl: "./img/jar.png",
     alt: "A jar for svaing money",
     description: "Earn better interest rates than your bank.",
     buttonText: "start saving",
@@ -11,7 +11,7 @@ export const data = [
   {
     tag: "circles",
     title: "Save with friends",
-    imgUrl: "/img/award.png",
+    imgUrl: "./img/award.png",
     alt: "an award photo showing hard earned results",
     description: "Stay motivated and have fun saving with friends and family.",
     buttonText: "join a circle",
@@ -20,7 +20,7 @@ export const data = [
   {
     tag: "mutual funds",
     title: "Play the long-term game",
-    imgUrl: "/img/pizza.png",
+    imgUrl: "./img/pizza.png",
     alt: "Stacking up result for long term",
     description: "Invest in diverse and quality mutual funds with any amount.",
     buttonText: "start investing",
@@ -29,7 +29,7 @@ export const data = [
   {
     tag: "emergency fund",
     title: "Save for the rainy day",
-    imgUrl: "/img/umbrella.png",
+    imgUrl: "./img/umbrella.png",
     alt: "unmbrella to safe guard you and your earnings",
     description: "Build a safety net for unexpected expenses.",
     buttonText: "create your own emergency plan",
@@ -38,7 +38,7 @@ export const data = [
   {
     tag: "stash",
     title: "Your secure digital wallet",
-    imgUrl: "/img/cash.png",
+    imgUrl: "./img/cash.png",
     alt: "digital currency supports for all users",
     description:
       "Send and receive cash in seconds for free. You only need their username.",
@@ -49,7 +49,7 @@ export const data = [
   {
     tag: "US stocks and bonds (Coming soon)",
     title: "Grow your global portfolio",
-    imgUrl: "/img/chart.png",
+    imgUrl: "./img/chart.png",
     alt: "chart of portfolio all over the globe",
     description: "",
     buttonText: "get early access",
@@ -109,7 +109,7 @@ export const reviews = [
       "‘‘User interfaceis fantastic, deposit and wihdrawals flawless and fast. I wish i had discovered this years ago, would have been a  illionaire by now’’ - Obiora, Nov 2021",
     store: "Play Store",
     alt: "download app from google play store",
-    imgUrl: "/img/playstore_logo.png",
+    imgUrl: "./img/playstore_logo.png",
   },
   {
     rating: 4.5,
@@ -118,7 +118,7 @@ export const reviews = [
       "‘’I just don’t know what to say about this app all i know is that it’s awesome, it’s been 2 years plus and ihaven’t had a reason to complain’’ - Henrietta, december 2021",
     store: "App Store",
     alt: "download app from apple play store",
-    imgUrl: "/img/apple_logo.png",
+    imgUrl: "./img/apple_logo.png",
   },
 ];
 
