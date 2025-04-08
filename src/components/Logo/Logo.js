@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
 function Logo({ props }) {
   return (
     <Link href="/">
-      <Wrapper src="./img/logo.png" alt="back to home" />
+      <Wrapper src="/img/logo.png" alt="back to home" />
     </Link>
   );
 }
