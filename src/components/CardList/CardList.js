@@ -31,8 +31,7 @@ const Heading = styled.h2`
   padding-bottom: 8px;
 
   @media ${QUERIES.tabletAndBigger} {
-    font-size: 2rem;
-    margin-top: 70px;
+    margin-top: 40px;
   }
   @media ${QUERIES.laptopAndBigger} {
     font-size: 2.5rem;
@@ -44,12 +43,13 @@ const Description = styled.p`
   margin-bottom: 32px;
 
   @media ${QUERIES.tabletAndBigger} {
-    font-size: 1.25rem;
     margin-bottom: 70px;
+    width: 500px;
   }
 
   @media ${QUERIES.laptopAndBigger} {
     margin-bottom: 120px;
+    width: 600px;
   }
 `;
 

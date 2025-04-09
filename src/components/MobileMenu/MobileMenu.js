@@ -4,7 +4,7 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
 import UnstyledButton from "../UnstyledButton/UnstyledButton";
-import { WEIGHTS } from "../../constant";
+import { QUERIES, WEIGHTS } from "../../constant";
 
 function MobileMenu({ isOpen, onDismiss }) {
   if (!isOpen) {
@@ -90,6 +90,10 @@ const NavLink = styled.a`
   gap: 0 16px;
 
   color: var(--color-primary-dark);
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 1rem;
+  }
 `;
 
 const Button = styled.div`
@@ -104,6 +108,12 @@ const SignUp = styled(UnstyledButton)`
   background-color: var(--color-primary);
   color: var(--color-white);
   text-align: center;
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    width: 200px;
+  }
 `;
 
 const Login = styled(UnstyledButton)`
@@ -112,6 +122,13 @@ const Login = styled(UnstyledButton)`
   color: var(--color-primary);
   font-weight: ${WEIGHTS.bold};
   margin-bottom: 16px;
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    width: 200px;
+    margin-top: 32px;
+  }
 `;
 
 export default MobileMenu;

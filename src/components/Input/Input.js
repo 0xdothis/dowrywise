@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import { QUERIES } from "../../constant";
 
 function Input({ value, handleChange, ...delegated }) {
   return (
@@ -21,6 +22,10 @@ const TextInput = styled.input`
   &:focus {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
+  }
+
+  @media ${QUERIES.tabletAndBigger} {
+    padding: 8px 16px;
   }
 `;
 

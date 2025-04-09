@@ -34,7 +34,7 @@ const Wrapper = styled(MaxWidthWrapper)`
   background-color: var(--color-white);
 
   @media ${QUERIES.tabletAndBigger} {
-    padding: 0 64px;
+    padding: 0 32px;
   }
 `;
 

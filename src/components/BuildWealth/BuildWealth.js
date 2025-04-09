@@ -36,8 +36,13 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 0px 32px;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 `;
 
@@ -55,12 +60,9 @@ const Heading = styled.h2`
   margin-bottom: 16px;
   color: var(--color-primary);
 
-  @media ${QUERIES.tabletAndBigger} {
-    font-size: 2rem;
-  }
-
-  @media ${QUERIES.laptopAndBiggerAndBigger} {
+  @media ${QUERIES.laptopAndBigger} {
     font-size: 2.5rem;
+    margin-bottom: 40px;
   }
 `;
 const Content = styled.div`
@@ -81,6 +83,11 @@ const Content = styled.div`
     border: 0;
     padding: 0;
   }
+
+  @media ${QUERIES.laptopAndBigger} {
+    width: 450px;
+    font-size: 1.35rem;
+  }
 `;
 
 const ContentWrapper = styled.div``;
@@ -95,15 +102,30 @@ const Bullet = styled.div`
 
 const Title = styled.h3`
   font-size: 1.25rem;
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.5rem;
+  }
 `;
 const DescriptionText = styled.p`
-  font-size: 1.125rem;
   color: var(--color-text);
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 1rem;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.25rem;
+  }
 `;
 
 const Number = styled.h3`
   color: inherit;
   font-size: 1.125rem;
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.5rem;
+  }
 `;
 
 const SignUpButton = styled(UnstyledButton)`
@@ -111,19 +133,20 @@ const SignUpButton = styled(UnstyledButton)`
   color: var(--color-white);
   font-weight: ${WEIGHTS.bold};
   border-radius: 4px;
-  padding: 16px;
+  padding: 8px 16px;
   width: 100%;
   margin: 16px auto;
   text-align: center;
   font-size: 1.125rem;
 
   @media ${QUERIES.tabletAndBigger} {
-    margin-top: 32px;
+    margin: 32px 0 0;
+    width: fit-content;
+    font-size: 0.95rem;
   }
 
   @media ${QUERIES.laptopAndBigger} {
     width: 200px;
-    margin: 16px 0;
   }
 `;
 

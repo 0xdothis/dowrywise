@@ -36,8 +36,13 @@ const Wrapper = styled.section`
   color: var(--color-white);
 
   @media ${QUERIES.tabletAndBigger} {
-    margin-right: -64px;
-    margin-left: -64px;
+    margin-right: -32px;
+    margin-left: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
     padding-left: 64px;
     padding-right: 64px;
   }
@@ -52,7 +57,7 @@ const Heading = styled.h2`
   }
 
   @media ${QUERIES.laptopAndBigger} {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 `;
 
@@ -60,11 +65,27 @@ const Paragraph = styled.p`
   text-transform: capitalize;
   font-size: 1.125rem;
   margin-bottom: 8px;
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.95rem;
+    width: 600px;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.5rem;
+    width: 800px;
+  }
 `;
 
 const ActionButton = styled(UnstyledButton)`
   display: flex;
   padding: 16px 0;
+
+  @media ${QUERIES.laptopAndBigger} {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
 `;
 
 const Text = styled.p`

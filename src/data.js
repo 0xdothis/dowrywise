@@ -1,3 +1,5 @@
+export const src = "./img/lady_1.png";
+
 export const data = [
   {
     tag: "savings",

@@ -41,15 +41,26 @@ const Wrapper = styled.form`
   flex-direction: column;
   gap: 1rem;
   margin: 2rem 0 4rem;
+
+  @media ${QUERIES.laptopAndBigger} {
+    flex-direction: row;
+  }
 `;
 
 const InvestButton = styled(UnstyledButton)`
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 16px 16px;
+  padding: 12px 16px;
   font-size: 1.125rem;
   border-radius: 4px;
   text-align: center;
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.95rem;
+
+    width: fit-content;
+    padding: 8px 16px;
+  }
 
   @media ${QUERIES.laptopAndBigger} {
     width: 200px;

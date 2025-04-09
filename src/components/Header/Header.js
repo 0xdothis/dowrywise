@@ -39,7 +39,7 @@ function Header() {
         </NavButton>
         <MobileActions>
           <UnstyledButton onClick={() => setShowMobileMenu(true)}>
-            <Icon id="menu" size={32} />
+            <Icon id="menu" size={24} />
             <VisuallyHidden>Menu</VisuallyHidden>
           </UnstyledButton>
         </MobileActions>
@@ -70,8 +70,8 @@ const MainHeader = styled.div`
   background-color: var(--color-white);
 
   @media ${QUERIES.tabletAndBigger} {
-    padding-right: 64px;
-    padding-left: 64px;
+    padding-right: 32px;
+    padding-left: 32px;
     max-width: 1300px;
     margin: 0 auto;
   }
@@ -98,7 +98,7 @@ const Nav = styled.div`
   display: none;
   @media ${QUERIES.laptopAndBigger} {
     display: flex;
-    font-size: 1.125rem;
+    font-size: 0.95rem;
     /* gap: 0 16px; */
   }
 `;
@@ -121,7 +121,7 @@ const NavButton = styled.div`
 `;
 
 const SignUp = styled(UnstyledButton)`
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   padding: 16px 24px;
   border-radius: 4px;
   background-color: var(--color-primary);
@@ -129,7 +129,7 @@ const SignUp = styled(UnstyledButton)`
 `;
 
 const Login = styled(UnstyledButton)`
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   padding: 16px 24px;
   color: var(--color-primary);
   font-weight: ${WEIGHTS.bold};

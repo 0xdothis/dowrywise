@@ -29,7 +29,18 @@ function Card({
           <Icon id="chevron-right" size={20} />
         </Link>
       </ListWrapper>
-      <ImgWrapper src={imgUrl} alt={alt} />
+      <picture>
+        <source
+          type="image/avif"
+          srcSet={`
+        ${imgUrl.replace(".png", ".avif")} 1x,
+        ${imgUrl.replace(".png", "@2x.avif")} 2x,
+        ${imgUrl.replace(".png", "@3x.avif")} 3x
+
+        `}
+        />
+        <ImgWrapper src={imgUrl} alt={alt} />
+      </picture>
     </Wrapper>
   );
 }
@@ -75,7 +86,11 @@ const Heading = styled.h3`
   margin-bottom: ${(p) => !!p.description && "8px"};
 
   @media ${QUERIES.tabletAndBigger} {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.75rem;
   }
 `;
 const DescriptionText = styled.p`
@@ -85,6 +100,14 @@ const DescriptionText = styled.p`
 
   &::first-letter {
     text-transform: uppercase;
+  }
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.95rem;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.5rem;
   }
 `;
 
@@ -101,6 +124,14 @@ const Link = styled.a`
   font-size: 0.8rem;
   padding: 16px;
   margin-left: -16px;
+
+  @media ${QUERIES.tabletAndBigger} {
+    font-size: 0.65rem;
+  }
+
+  @media ${QUERIES.laptopAndBigger} {
+    font-size: 1.125rem;
+  }
 `;
 
 const CallToAction = styled(UnstyledButton)`

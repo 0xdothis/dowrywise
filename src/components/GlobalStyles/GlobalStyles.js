@@ -53,7 +53,6 @@ table {
 *:after {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
@@ -84,6 +83,7 @@ html {
 --color-accent-006: hsl(${COLORS.accents[6]});
 --color-backdrop: hsl(${COLORS.black} / 0.6);
 
+font-family: Tahoma;
 
 
   /*
